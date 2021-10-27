@@ -1,9 +1,8 @@
-console.log('This is console');
+console.log('Welcome to Shresth Notes');
 display();
 
 let btn = document.getElementById('btn');
 btn.addEventListener('click', () => {
-  console.log('button clicked');
   let texpr = document.getElementById('textarea');
   let notes = localStorage.getItem('notes');
   if (notes == null) {
@@ -44,8 +43,6 @@ else{
 }
 
 function dltnotes(index) {
-  console.log("delete button used");
-  console.log(`The id of button is ${index}`)
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
